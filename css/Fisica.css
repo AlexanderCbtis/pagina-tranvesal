@@ -1,0 +1,70 @@
+body {
+    background-color: #f2f2f2;
+}
+
+nav {
+    background-color: #ffd7bd;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #5653ff;
+    padding: 8px 16px;
+}
+
+.contenedores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ff9191;
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.contenedor p {
+    margin-top: 10px;
+}
+
+.Imagen_logo {
+    margin-left: 250px;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 0rem;
+    border-radius: 7px;
+    border: solid rgb(0, 255, 247);
+}
+
+footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    border: 2px solid rgb(62, 242, 255); /* Añadido el borde blanco */
+    border-radius: 10px; /* Añadida la esquina redondeada */
+    margin-top: 20px; /* Separación superior */
+}

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #797b8b;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul li button {
+    position: relative;
+    font-size: 3em;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul li button::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 2s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul li button:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+.Imagen_logo {
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 0rem;
+    border-radius: 7px;
+    border: solid rgb(0, 255, 247);
+}
+
+.imgen_parrafo1 {
+    padding: 0.5rem; /* Ajusta el espacio interno de la imagen */
+    color: rgb(255, 255, 255);
+    border-radius: 10px; /* Añadida la esquina redondeada */
+    margin-bottom: 20px; /* Separación entre imágenes con texto */
+}
+
+.paragraph-container {
+    margin-bottom: 20px; /* Separación entre contenedores de párrafos */
+    border: 2px solid white; /* Añadido el borde blanco */
+    border-radius: 10px; /* Añadida la esquina redondeada */
+    padding: 10px; /* Espacio interno del contenedor */
+    display: inline-block; /* Cambio para permitir que la imagen esté dentro del borde */
+}
+
+.paragraph-container .imgen_parrafo1 {
+    margin-right: 10px; /* Ajusta el margen derecho de la imagen */
+}
+
+footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    border: 2px solid white; /* Añadido el borde blanco */
+    border-radius: 10px; /* Añadida la esquina redondeada */
+    margin-top: 20px; /* Separación superior */
+}
+
+.menu-container {
+    border: 5px solid rgb(125, 192, 201); /* Añadido el borde blanco */
+    border-radius: 10px; /* Añadida la esquina redondeada */
+    padding: 10px; /* Espacio interno del contenedor */
+    display: inline-block; /* Cambio para permitir que la imagen esté dentro del borde */
+    margin-bottom: 20px; /* Separación inferior */
+}
+  
+  .slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la imagen dentro de cada slide */
+  }
+  
+  .slide img {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #ccc;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .slider-controls button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .slider-controls button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .slider-controls button:focus {
+    outline: none;
+  }
+  
+  
